@@ -20,14 +20,29 @@
     </div>
 
     <!-- Hidden Profile Section -->
-    <div id="profile" style="display:none;">
-        <h2>PROFILE INFO</h2>
-        <div id="userInfo"></div>
-        <h3>XP RANGE</h3>
-        <div id="chartContainer"></div>
-        <h3>Audit Ratio</h3>
-        <div id="auditChartContainer"></div>
-        <button onclick="handleLogout()" id="logoutButton">Log out</button>
+    <div id="page-container"  style="display:none;">
+        <div id ="navbar">
+            <h1>Graphql</h1>
+            <button id="logout">Log out</button>
+        </div>
+        <h3>Hello Sandra! 👋🏻</h3>
+        <div id="main-section">
+            <div id="profile">
+                <h2>Profile</h2>
+                <p>Full name</p>
+                <p>🎂 26/07/1998</p>
+                <p>👥 Username</p>
+            </div>
+            <div id="graphs">
+                <div class="item item-1">Total XP earned</div>
+                <div class="item item-2">XP earned by projects</div>
+                <div class="item item-3">Total XP NUMBER</div>
+                <div class="item item-4">XP earned over time</div>
+                <div class="item item-5">Check out your skills 👉🏻 </div>
+                <div class="item item-6">Skills graph</div>
+            </div>
+        </div>
+        
     </div>
     
     <script type="module" src="login.js"></script>
