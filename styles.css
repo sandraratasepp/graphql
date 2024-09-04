@@ -9,7 +9,6 @@ body {
 }
 
 h1 {
-    text-align: left;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -42,49 +41,53 @@ p {
 }
 
 /* Login Page Container */
-.login-page {
+#login-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: rgb(45, 45, 45);
 }
 
 /* Form */
-.login-form{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.login-form {
+    align-items: center;
+    justify-content: center;
+    width: 450px;
 }
 
 .login-form input {
-    width: 280px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.login-form button {
     width: 100%;
     padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
+    margin: 10px 0;
+    border: 1px solid rgb(200, 180, 220);
     border-radius: 5px;
-    cursor: pointer;
+    background-color: white;
+    color: rgb(45, 45, 45);
+    font-size: 1em;
+    transition: border-color 0.3s;
 }
 
-.login-form button:hover {
-    background-color: #0056b3;
+.login-button {
+    background-color: rgb(45, 45, 45); 
+    color: rgb(230, 198, 250); 
+    border: 1px solid rgb(200, 180, 220); 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    margin-top: 30px; 
+    width: 470px; 
+}
+
+/* Login Button Hover State */
+.login-button:hover {
+    background-color: rgb(230, 198, 250); 
+    color: rgb(45, 45, 45); 
+    border: 1px solid rgb(45, 45, 45); 
 }
 
 /* Profile */
@@ -93,25 +96,30 @@ p {
     display: flex;
     flex-direction: column;
     background-color: rgb(45, 45, 45);
+    height: 100vh;
 
 
 }
 
 #navbar {
-    margin: 20px;
+    background-color: rgb(45, 45, 45); 
+    color: rgb(230, 198, 250); 
     display: flex;
-    flex-direction: row;
-    background-color: rgb(230, 190, 255);
-    border: 1px solid rgba(230, 198, 250, 0.926);
-    height: 70px; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: 'JetBrains Mono', monospace; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    height: 60px;
 
 }
 
 #main-section {
     display: flex;
     flex-direction: row;
-
-
 }
 
 #profile {
@@ -121,8 +129,6 @@ p {
     border-radius: 5px;
     border: 1px solid rgba(230, 198, 250, 0.926);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-
 }
 
 #graphs {
@@ -180,10 +186,22 @@ p {
 
 /* Logout button */
 
-#logout button {
+.logout-button {
+    background-color: rgb(230, 198, 250); 
+    color: rgb(45, 45, 45); 
+    border: none; 
+    border-radius: 5px; 
+    padding: 8px 16px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+    margin-left: 20px;
+    width: 100px;
 
 }
 
-#logout button :hover {
-    
+.logout-button:hover {
+    background-color: rgb(45, 45, 45); 
+    color: rgb(230, 198, 250); 
+    border: 1px solid rgb(230, 198, 250);
 }

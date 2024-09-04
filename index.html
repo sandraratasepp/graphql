@@ -9,26 +9,27 @@
 </head>
 <body>
     <!-- Login Page -->
-    <div class="login-page">
-        <h1>Graphql</h1>
+    <div id="login-page">
         <form id="login-form" class="login-form">
+            <h2>GraphQL</h2>
             <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
-            <button type="submit" id="login-button" onclick="">Log in</button>
+            <button type="submit" id="login-button" class="login-button">Log in</button>
         </form>
-        <p id="login-error" style="color:red;"></p>
+        <p id="login-error" class="login-error"></p>
     </div>
+
 
     <!-- Hidden Profile Section -->
     <div id="page-container"  style="display:none;">
         <div id ="navbar">
             <h1>Graphql</h1>
-            <button id="logout">Log out</button>
+            <button id="logout" class="logout-button">Log out</button>
         </div>
         <h3>Hello Sandra! 👋🏻</h3>
         <div id="main-section">
             <div id="profile">
-                <h2>Profile</h2>
+                <h1>Profile</h1>
                 <p>Full name</p>
                 <p>🎂 26/07/1998</p>
                 <p>👥 Username</p>
@@ -46,6 +47,7 @@
     </div>
     
     <script type="module" src="login.js"></script>
+    <script type="module" src="logout.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 

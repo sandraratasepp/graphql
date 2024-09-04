@@ -17,7 +17,7 @@ function getJwt(username, password) {
         console.log('Login response:', data);
         if (typeof data === 'string') {
             Cookies.set('token', data.jwt, { expires: 1/24 });
-            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('login-page').style.display = 'none';
             document.getElementById('page-container').style.display = 'flex';
         } else {
             document.getElementById('login-error').innerText = 'Incorrect log in details';
